@@ -1,0 +1,50 @@
+Pour éditer la ligne de commande on peut déplacer le curseur à l'aide des touches de fonction habituelles (touche <Début>, touche <Fin>, flèches <Gauche> et <Droite>, touches <Retour arrière> et <Suppr> pour effacer un caractère), mais l'on dispose aussi de raccourcis clavier pour la plupart des tâches d'édition courantes :
+
+- Effacement de ligne
+
+    * <CTRL k> : effacement depuis la position du curseur incluse jusqu'à la fin de la ligne (k pour kill = tuer en anglais)
+    * <CTRL u> : effacement depuis le caractère qui précède le curseur jusqu'au début de la ligne 
+
+- Effacement de mot
+
+    * <ALT d> : effacement depuis la position du curseur incluse jusqu'à la fin du « mot » courant
+    * <CTRL w> : effacement depuis le caractère qui précède le curseur jusqu'au début du « mot » courant 
+
+- Déplacement en début et fin de ligne
+
+    * <CTRL a> : placer le curseur sur le premier caractère de la ligne (comme la touche <Home>/<Début>)
+    * <CTRL e> : placer le curseur après le dernier caractère de la ligne (comme la touche <End>/<Fin>) 
+
+- Se déplacer de mot en mot
+
+    * <ALT b> : placer le curseur sur le premier caractère du « mot » courant (b comme begin = commencer en anglais)
+    * <ALT f> : placer le curseur après la fin du « mot » courant (f comme follow = suivre en anglais) 
+
+- Insérer ce qui a été effacé
+
+    * <CTRL y> : insère la dernière chaîne de caractères de la ligne de commande effacée par l'une des commandes précédentes 
+
+- Récupérer un argument de la ligne précédente
+
+    * !$ : reprise du dernier argument de la commande précédente. 
+
+Exemple: créons un répertoire avec :
+
+mkdir -p peter/pan/documents/clochettes
+
+Nous voulons maintenant entrer dans ce répertoire en utilisant la commande cd. Au lieu de retaper le chemin, nous tapons simplement :
+
+      cd !$
+
+et le shell va donner comme argument à la commande cd le chemin peter/pan/documents/clochettes qui servait d'argument à la commande mkdir précédente.
+
+- Effacer ou se déplacer caractère par caractère (utile pour garder ses mains bien au milieu du clavier...)
+
+    * <CTRL d> : effacement du caractère sous le curseur (comme la touche <Suppr>)
+    * <CTRL b> : se déplacer d'un caractère vers la gauche (comme la flèche <Gauche>)
+    * <CTRL f> : se déplacer d'un caractère vers la droite (comme la flèche <Droite>) 
+
+
+- Tout nettoyer
+
+    * <CTRL l> : efface le contenu de l'écran 
