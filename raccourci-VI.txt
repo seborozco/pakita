@@ -1,50 +1,52 @@
-Pour éditer la ligne de commande on peut déplacer le curseur à l'aide des touches de fonction habituelles (touche <Début>, touche <Fin>, flèches <Gauche> et <Droite>, touches <Retour arrière> et <Suppr> pour effacer un caractère), mais l'on dispose aussi de raccourcis clavier pour la plupart des tâches d'édition courantes :
+#seborozco
+
+Pour Ã©diter la ligne de commande on peut dÃ©placer le curseur Ã  l'aide des touches de fonction habituelles (touche <DÃ©but>, touche <Fin>, flÃ¨ches <Gauche> et <Droite>, touches <Retour arriÃ¨re> et <Suppr> pour effacer un caractÃ¨re), mais l'on dispose aussi de raccourcis clavier pour la plupart des tÃ¢ches d'Ã©dition courantes :
 
 - Effacement de ligne
 
-    * <CTRL k> : effacement depuis la position du curseur incluse jusqu'à la fin de la ligne (k pour kill = tuer en anglais)
-    * <CTRL u> : effacement depuis le caractère qui précède le curseur jusqu'au début de la ligne 
+    * <CTRL k> : effacement depuis la position du curseur incluse jusqu'Ã  la fin de la ligne (k pour kill = tuer en anglais)
+    * <CTRL u> : effacement depuis le caractÃ¨re qui prÃ©cÃ¨de le curseur jusqu'au dÃ©but de la ligne 
 
 - Effacement de mot
 
-    * <ALT d> : effacement depuis la position du curseur incluse jusqu'à la fin du « mot » courant
-    * <CTRL w> : effacement depuis le caractère qui précède le curseur jusqu'au début du « mot » courant 
+    * <ALT d> : effacement depuis la position du curseur incluse jusqu'Ã  la fin du Â« mot Â» courant
+    * <CTRL w> : effacement depuis le caractÃ¨re qui prÃ©cÃ¨de le curseur jusqu'au dÃ©but du Â« mot Â» courant 
 
-- Déplacement en début et fin de ligne
+- DÃ©placement en dÃ©but et fin de ligne
 
-    * <CTRL a> : placer le curseur sur le premier caractère de la ligne (comme la touche <Home>/<Début>)
-    * <CTRL e> : placer le curseur après le dernier caractère de la ligne (comme la touche <End>/<Fin>) 
+    * <CTRL a> : placer le curseur sur le premier caractÃ¨re de la ligne (comme la touche <Home>/<DÃ©but>)
+    * <CTRL e> : placer le curseur aprÃ¨s le dernier caractÃ¨re de la ligne (comme la touche <End>/<Fin>) 
 
-- Se déplacer de mot en mot
+- Se dÃ©placer de mot en mot
 
-    * <ALT b> : placer le curseur sur le premier caractère du « mot » courant (b comme begin = commencer en anglais)
-    * <ALT f> : placer le curseur après la fin du « mot » courant (f comme follow = suivre en anglais) 
+    * <ALT b> : placer le curseur sur le premier caractÃ¨re du Â« mot Â» courant (b comme begin = commencer en anglais)
+    * <ALT f> : placer le curseur aprÃ¨s la fin du Â« mot Â» courant (f comme follow = suivre en anglais) 
 
-- Insérer ce qui a été effacé
+- InsÃ©rer ce qui a Ã©tÃ© effacÃ©
 
-    * <CTRL y> : insère la dernière chaîne de caractères de la ligne de commande effacée par l'une des commandes précédentes 
+    * <CTRL y> : insÃ¨re la derniÃ¨re chaÃ®ne de caractÃ¨res de la ligne de commande effacÃ©e par l'une des commandes prÃ©cÃ©dentes 
 
-- Récupérer un argument de la ligne précédente
+- RÃ©cupÃ©rer un argument de la ligne prÃ©cÃ©dente
 
-    * !$ : reprise du dernier argument de la commande précédente. 
+    * !$ : reprise du dernier argument de la commande prÃ©cÃ©dente. 
 
-Exemple: créons un répertoire avec :
+Exemple: crÃ©ons un rÃ©pertoire avec :
 
 mkdir -p peter/pan/documents/clochettes
 
-Nous voulons maintenant entrer dans ce répertoire en utilisant la commande cd. Au lieu de retaper le chemin, nous tapons simplement :
+Nous voulons maintenant entrer dans ce rÃ©pertoire en utilisant la commande cd. Au lieu de retaper le chemin, nous tapons simplement :
 
       cd !$
 
-et le shell va donner comme argument à la commande cd le chemin peter/pan/documents/clochettes qui servait d'argument à la commande mkdir précédente.
+et le shell va donner comme argument Ã  la commande cd le chemin peter/pan/documents/clochettes qui servait d'argument Ã  la commande mkdir prÃ©cÃ©dente.
 
-- Effacer ou se déplacer caractère par caractère (utile pour garder ses mains bien au milieu du clavier...)
+- Effacer ou se dÃ©placer caractÃ¨re par caractÃ¨re (utile pour garder ses mains bien au milieu du clavier...)
 
-    * <CTRL d> : effacement du caractère sous le curseur (comme la touche <Suppr>)
-    * <CTRL b> : se déplacer d'un caractère vers la gauche (comme la flèche <Gauche>)
-    * <CTRL f> : se déplacer d'un caractère vers la droite (comme la flèche <Droite>) 
+    * <CTRL d> : effacement du caractÃ¨re sous le curseur (comme la touche <Suppr>)
+    * <CTRL b> : se dÃ©placer d'un caractÃ¨re vers la gauche (comme la flÃ¨che <Gauche>)
+    * <CTRL f> : se dÃ©placer d'un caractÃ¨re vers la droite (comme la flÃ¨che <Droite>) 
 
 
 - Tout nettoyer
 
-    * <CTRL l> : efface le contenu de l'écran 
+    * <CTRL l> : efface le contenu de l'Ã©cran 
